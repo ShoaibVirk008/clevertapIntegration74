@@ -15,6 +15,8 @@ if linkage != nil
 end
 
 target 'CleverTabIntegration74' do
+  use_frameworks! :linkage => :static
+    pod 'clevertap-react-native', :path => '../node_modules/clevertap-react-native'
   config = use_native_modules!
 
   use_react_native!(
