@@ -49,8 +49,10 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>CleverTapAccountID</key>
-	<string>867as86adsasd</string>
+	<string>Z67-7KW-847Z</string>
 	<key>CleverTapToken</key>
-	<string>asd7asd987ds9</string>
+	<string>03a-a61</string>
+	<key>CleverTapRegion</key>
+	<string>global</string>
 </dict>
 </plist>

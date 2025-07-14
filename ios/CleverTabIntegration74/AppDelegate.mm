@@ -1,9 +1,10 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
-#import <CleverTap-iOS-SDK/CleverTap.h>
-#import <Clevertap-react-native/CleverTapReactManager.h>
-
+// #import <CleverTap-iOS-SDK/CleverTap.h>
+// #import <clevertap-react-native/CleverTapReactManager.h>
+#import "CleverTap.h"
+#import "CleverTapReactManager.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
