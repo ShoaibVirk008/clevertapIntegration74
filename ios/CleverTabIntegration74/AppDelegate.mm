@@ -14,6 +14,7 @@
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
 [CleverTap autoIntegrate]; // integrate CleverTap SDK using the autoIntegrate option
+[CleverTap setDebugLevel:CleverTapLogDebug];
 [[CleverTapReactManager sharedInstance] applicationDidLaunchWithOptions:launchOptions];
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }

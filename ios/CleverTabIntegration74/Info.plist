@@ -52,7 +52,7 @@
 	<string>Z67-7KW-847Z</string>
 	<key>CleverTapToken</key>
 	<string>03a-a61</string>
-	<key>CleverTapRegion</key>
-	<string>global</string>
+	<!-- <key>CleverTapRegion</key>
+	<string>global</string> -->
 </dict>
 </plist>

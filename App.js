@@ -1,13 +1,28 @@
+import {useEffect} from 'react';
 import {StatusBar, StyleSheet, Text, useColorScheme, View} from 'react-native';
 const CleverTap = require('clevertap-react-native');
 function App() {
+  useEffect(() => {
+    CleverTap.addListener(
+      CleverTap.CleverTapInAppNotificationButtonTapped,
+      event => {
+        _handleCleverTapEvent(
+          CleverTap.CleverTapInAppNotificationButtonTapped,
+          event,
+        );
+      },
+    );
+  }, []);
+  function _handleCleverTapEvent(eventName, event) {
+    console.log('CleverTap Event called - ', eventName, event);
+  }
   const trackEvent = (eventName, eventData) => {
     try {
       console.log('trackEvent triggered');
       CleverTap.recordEvent('Product Viewed', {
-        'Product Name': 'Dairy Milk',
-        Category: 'Chocolate',
-        Amount: 20.0,
+        'Product Name': 'Lays',
+        Category: 'Chips',
+        Amount: 50.0,
       });
       console.log('trackEvent success');
     } catch (error) {
@@ -19,10 +34,10 @@ function App() {
     try {
       console.log('trackUser triggered');
       CleverTap.onUserLogin({
-        Name: 'React-Test',
-        Identity: '11102008',
-        Email: 'r@gmail.com',
-        custom1: 43,
+        Name: '3453545345-Test',
+        Identity: '3453545345',
+        Email: '3453545345@gmail.com',
+        custom1: 3453545345,
       });
       console.log('trackUser success');
     } catch (error) {
